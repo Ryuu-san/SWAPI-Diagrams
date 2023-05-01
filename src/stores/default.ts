@@ -3,9 +3,9 @@ import { ref, computed } from 'vue'
 import axios from 'axios'
 
 export const useDefaultStore = defineStore('default', ()=> {
-  let quantityPeople = ref(0)
-  let peoples = ref<never | object>([])
-  let activePage = ref(1)
+  const quantityPeople = ref(0)
+  const peoples = ref<never | object>([])
+  const activePage = ref(1)
 
   const getPeople = (page: number) =>{
     let defaultPage = 1
